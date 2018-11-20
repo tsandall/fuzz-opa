@@ -24,3 +24,5 @@ See [go-fuzz/README.md](https://github.com/dvyukov/go-fuzz) for details on the
 fuzzer output. Pay attention to the `restarts` output field. This value should
 be around 1/10,000. If it's higher than this and the `crashers` field is greater
 than zero, check the output directory for crash output.
+
+Or just `make`.
