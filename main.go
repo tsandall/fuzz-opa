@@ -6,10 +6,7 @@ import (
 	"github.com/open-policy-agent/opa/ast"
 )
 
-var blacklist = []string{
-	"{{{{{", // nested { and [ cause the parse time to explode
-	"[[[[[",
-}
+var blacklist = []string{}
 
 func Fuzz(data []byte) int {
 	for i := range blacklist {
